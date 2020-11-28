@@ -6,7 +6,7 @@ pipeline {
   }
   
   stages {
-    stage('build') {
+    stage('Building Maven Project') {
       agent {
         node {
           label 'jslave1'
@@ -19,7 +19,7 @@ pipeline {
       }
     }
 
-    stage('test') {
+    stage('Testing Maven Project') {
       agent {
         node {
           label 'jslave2'
