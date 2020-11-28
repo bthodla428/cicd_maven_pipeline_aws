@@ -10,7 +10,6 @@ pipeline {
 
       }
       steps {
-        sh 'apt install git -y'
         git 'https://github.com/bthodla428/cicd_maven_pipeline_aws.git'
         sh 'mvn compile'
       }
@@ -24,7 +23,6 @@ pipeline {
 
       }
       steps {
-        sh 'apt install git -y'
         git 'https://github.com/bthodla428/cicd_maven_pipeline_aws.git'
         sh 'mvn test'
       }
