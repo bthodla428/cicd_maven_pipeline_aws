@@ -9,7 +9,7 @@ pipeline {
     stage('build') {
       agent {
         node {
-          label 'slave1'
+          label 'jslave1'
         }
 
       }
@@ -22,7 +22,7 @@ pipeline {
     stage('test') {
       agent {
         node {
-          label 'slave2'
+          label 'jslave2'
         }
 
       }
